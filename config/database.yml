@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  pool: 5
+  # these are our new parameters
+  encoding: UTF-8
+  database: employee_auth_app_development
+  host: localhost
+  username: employee_auth_app
+  password: secret
+
+test:
+  # this won't work 
+  adapter: postgresql
+  encoding: unicode
+  database: employee_auth_app_test
+  pool: 5
+  username: employee_auth_app
+  password: secret
+
+production:
+  # this won't work 
+  adapter: postgresql
+  encoding: unicode
+  database: employee_auth_app_production
+  pool: 5
+  username: employee_auth_app
+  password: secret
